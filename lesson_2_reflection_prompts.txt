@@ -1,0 +1,23 @@
+What happens when you initialize a repository? Why do you need to do it?
+
+会创建一个.git 文件来记录版本历史信息。用 Git 进行版本控制还有与他人协作
+
+How is the staging area different from the working directory and the repository?
+What value do you think it offers?
+
+暂存区不是实际存储的文件内容，也不是实际存在的一个磁盘区域，只是用于记录要被 commit 的
+文件的列表。它可以帮助我们更好的管理我们要 commit 的内容，使得每次提交更加地逻辑封闭
+
+How can you use the staging area to make sure you have one commit per logical
+change?
+
+What are some situations when branches would be helpful in keeping your history
+organized? How would branches help?
+
+How do the diagrams help you visualize the branch structure?
+
+What is the result of merging two branches together? Why do we represent it in
+the diagram the way we do?
+
+What are the pros and cons of Git’s automatic merging vs. always doing merges
+manually?
