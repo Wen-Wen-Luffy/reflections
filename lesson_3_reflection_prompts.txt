@@ -6,24 +6,29 @@ local?
 Why might you want to always pull changes manually rather than having Git
 automatically stay up-to-date with your remote repository?
 
-    Fill in your answer here
+    有的时候远程的更改是别人提交的，我不一定想把它加到我的本地内容中；而有的时候远程的内容
+    和我本地的内容有冲突，这时候 Git 并无法简单地把它自动同步到我的本地内容中
 
 Describe the differences between forks, clones, and branches.  When would you
 use one instead of another?
 
-    Fill in your answer here
+    fork 用作拷贝别人在 GitHub 上的 repository 到自己的 GitHub 账号上
+    clone 用作拷贝 GitHub 上（自己或者别人）的 repository 到自己的本地，也可以拷贝 repository 从本地到本地
+    branch 用在一个 repository 上，在上面创建一个 commit 的分支
 
 What is the benefit of having a copy of the last known state of the remote
 stored locally?
 
-    Fill in your answer here
+    可以清楚地看出在上次同步的基础上，本地又作了几次提交；可以帮助 Git 更好地 merge commit
 
 How would you collaborate without using Git or GitHub?  What would be easier,
 and what would be harder?
 
-    Fill in your answer here
+    使用 Git 和 GitHub 更容易，因为它们可以帮助我们在比较少当面交流和文字交流的情况下，
+    解决参与者的代码或内容冲突，更方便地合并内容
 
 When would you want to make changes in a separate branch rather than directly in
 master?  What benefits does each approach have?
 
-    Fill in your answer here
+    1.想尝试一个试验的想法，但又不想影响正式运行的版本
+    2.发起 pull request ，让其他人来审查这样的更改是否可行，并不影响正式版本的使用
