@@ -11,13 +11,26 @@ What value do you think it offers?
 How can you use the staging area to make sure you have one commit per logical
 change?
 
+把与这个逻辑更改有关的文件 add 到暂存区，如果发现与这个逻辑更改无关的文件被加到暂存区了，
+可以使用 reset 命令把它从暂存区移除。这样就更好地管理了这一次逻辑更改，便于 commit
+
 What are some situations when branches would be helpful in keeping your history
 organized? How would branches help?
 
+分支可以开启一个工程的试验版本来相对独立的开发，同时也不影响正式版本的运行，试验版本开发成功
+的话可以 merge 到正式版本中，若失败了，也可以抛弃掉而不影响正式版的运行。
+如果开发某一个功能或者修复bug觉得烦了，可以切到另一个分支来做些新鲜的事情！
+
 How do the diagrams help you visualize the branch structure?
+
+版本历史的图示可以让我们清楚地看出每一次分支的起点和每次分支 merge 的地方
 
 What is the result of merging two branches together? Why do we represent it in
 the diagram the way we do?
 
+
+
 What are the pros and cons of Git’s automatic merging vs. always doing merges
 manually?
+
+自动合并更加方便和智能，而手动合并可以更个性化的解决冲突，使合并更加符合开发者的意图
